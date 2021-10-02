@@ -1,0 +1,116 @@
+/*Estilos del encabezado*/
+.encabezado0 {
+  background-color: #e8e8e4;
+  padding: 10px;
+  
+}
+.encabezado1 {
+  padding: 30px;
+  text-align: center;
+}
+.encabezado2 {
+  text-align: center;
+  background-color: #d8e2dc;
+  padding: 30px;
+  font-family: 'Oswald';
+}
+a:hover {
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: #b9717d;
+}
+a:link {
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: #e08d9b;
+}
+a:visited {
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: #264653;
+}
+a:active {
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: #264653;
+}
+
+/*Portada Web*/
+#Portada {
+  margin-left:20px;
+  margin-right:30px;
+  margin-top:50px;
+  margin-bottom:50px;
+  opacity: 0.95;
+  margin-bottom: 20px;
+}
+.tituloImagen{
+  margin: 50px;
+  text-align: center;
+}
+.titulo{
+  margin: 50px;
+  text-align: center;
+  font-family: "Playfair display";
+  font-size: 30px;
+  color:#D7D1C5;
+}
+
+/*Estilos Cuerpo de Página*/
+
+#lookNoche {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 100px;
+}
+
+.tituloTendencias{
+  margin-left: 200px;
+}
+
+.textoTendencias {
+  background-color: #F8EDEB;
+  padding: 20px;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 120px;
+}
+
+
+#otoño {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  margin-right: 50px;
+  margin-left: 120px;
+  padding-right:20px;
+}
+/*Estilos de pie de página*/
+
+.piePagina {
+  background-color: #fae1dd;
+  padding: 30px;
+  text-align: center;
+  font-family: "Playfair Display";
+}
+.redes {
+  font-size: 18px;
+  font-family: "Playfair Display";
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+}
+#facebook:hover {
+  transform: scale(1.5);
+}
+#instagram:hover {
+  transform: scale(1.5);
+}
