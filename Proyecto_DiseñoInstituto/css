@@ -1,0 +1,158 @@
+
+
+html{
+  font-size:100%;
+}
+/*Fuente Forum mediante font-face para mi aula en encabezado*/
+@font-face {
+  font-family: "Forum";
+  src: url("C:\USERS\USER\APPDATA\LOCAL\MICROSOFT\WINDOWS\FONTS\FORUM-REGULAR.TTF")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*Estilos encabezado*/
+header {
+  position: fixed;
+  width: 100%;
+  background-color: hsla(90, 100%, 100%, 1); /*color blanco en hsla*/
+}
+.encabezado {
+  padding-top: 50px;
+  font-family: "Forum";
+  text-align: center;
+}
+.miaula{
+  font-size:1.500rem; /*1.500*16px=24 px*/
+}
+.navegacion {
+  margin-bottom: 10px;
+  
+}
+
+.miaula {
+  font-family: "Forum";
+  padding-bottom: 10px;
+  text-align: center;
+}
+/*Estilos hipervínculos encabezado*/
+#encabezado_ a:hover {
+  color: #181819;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado #181819);
+  text-align: center;
+}
+#encabezado_ a:active {
+  color: #181819;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado #181819);
+  text-align: center;
+}
+#encabezado_ a:link {
+  color: #181819;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado #181819);
+  text-align: center;
+}
+#encabezado_ a:visited {
+  color: #181819;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado #181819);
+  text-align: center;
+}
+/*Estilos del cuerpo de la página*/
+.tituloModulo {
+  font-family: "Bebas Neue", cursive;
+  padding-top: 100px;
+  padding-left: 50px;
+  text-align: center;
+  color: #9a8c98;
+}
+#fotoInstituto {
+  padding-top: 150px;
+}
+.contenidoModulo {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 50px;
+  font-size: 18px;
+}
+.tituloProfesores {
+  font-family: "Bebas Neue", cursive;
+  padding-top: 100px;
+  padding-left: 50px;
+  text-align: center;
+  color: #9a8c98;
+}
+.contenidoProfesores {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 50px;
+  font-size: 18px;
+}
+.tituloClase {
+  font-family: "Bebas Neue", cursive;
+  padding-top: 100px;
+  text-align: center;
+  color: #9a8c98;
+}
+.contenidoClase {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+ul {
+  text-align: center;
+}
+li {
+  text-align: center;
+}
+
+/*Estilos de Pie de Página*/
+.piePagina {
+  padding-top: 20px;
+  background-color: #181819;
+  text-align: center;
+  padding-bottom: 20px;
+  color: aliceblue;
+}
+.correo {
+  padding: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/*Estilos hipervínculos Pie de Página*/
+#piepagina_ a:hover {
+  color: #ffff;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado color);
+  font-size:1.500rem;
+}
+#piepagina_ a:active {
+  color: #ffff;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado color);
+  font-size:1.500rem;
+}
+#piepagina_ a:link {
+  color: #ffff;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado color);
+  font-size:1.500rem;
+}
+#piepagina_ a:visited {
+  color: #ffff;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  filter: drop-shadow(posicion-x posicion -y difuminado color);
+  font-size:1.500rem;
+}
