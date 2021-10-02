@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--favicon-->
+    <link href="imagenes/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <!--Hoja de estilo css-->
+    <link href="estilo/estilo.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!--Fuente Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Fuente Bebas veue-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <title>DAW-IES TETUÁN DE LAS VICTORIAS</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--Encabezado de página-->
+      <header>
+        <div class="encabezado">
+          <img src="imagenes/logo2.png" alt="Responsive-image" class="img-fluid" width="200px" height="300px"/>
+         </div>
+          <div class="miaula">
+            <br>
+           <h6>MI AULA</h6>
+         
+         <div class="navegacion">
+             <center>
+                <nav id="encabezado_">
+                    <a href="#clase">MI CLASE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#modulo">MODULOS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#profesores">PROFESORES</a>
+             </center>   
+            </nav>
+        </div>
+        
+      </header>
+      <!--Cuerpo de página-->
+      <main>
+        <section id="fotoInstituto">
+          <a href="https://www.iestetuan.es/cmsj/"
+            ><img
+              src="imagenes/portada.gif"
+              alt="Responsive-image"
+              class="img-fluid"
+              width="2500px"
+              heigth="2500px"
+          /></a>
+        </section>
+        <div class="row">
+            <div class="col-6">
+                <div class="container-left">
+                <section id="modulo">
+                    <div class="tituloModulo">
+                     <h2>¡VEN A CONOCER  
+                        DESARROLLO DE APLICACIONES WEB!</h2>
+                    </div>
+                    <div class="contenidoModulo">
+                        <ol>
+                            <li>Empresa e iniciativa emprendedora</li>
+                            <li>Inglés</li>
+                            <li>Diseño de interfaces web</li>
+                            <li>Desarrollo entorno de servidor</li>
+                            <li>Desarrollo entorno cliente</li>
+                            <li>Despliegue de aplicaciones web</li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="container-right">
+                <section id="profesores">
+                    <div class="tituloProfesores">
+                        <h2>NUESTRO PROFESORADO</h2>
+                    </div>
+                    <div class="contenidoProfesores">
+                        <ul>
+                            <li>Rosa Ana Guerra Hoyos</li>
+                            <li>Marta Bayona Espin</li>
+                            <li>Maria Carmen Armijo Torres</li>
+                            <li>Jose Alberto López Ballesteros</li>
+                            <li>Miguel Ángel Cruzado Vivas</li>
+                            <li>Jose Emilio Vera Saura</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+       
+        <section id="clase">
+            <center>
+                <img src="imagenes/clase.jpg" alt="Responsive-image" class="img-fluid" width="700" height="700"/>
+            </center>
+            <div class="tituloClase">
+            <h2>INSTALACIONES DE ALTA CALIDAD</h2>
+          </div>
+          <div class="contenidoClase">
+            <ul>
+              <li>Aulas de 50 m²</li>
+              <li>Tres amplios ventanales</li>
+              <li>Equipación de alta tecnología</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!--Pie de página-->
+      <footer>
+        <div class="piePagina">
+          <nav id="piepagina_">
+            <a href="https://www.iestetuan.es/cmsj/">NUESTRO CENTRO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#modulo">MODULOS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#profesores">PROFESORES</a>
+          </nav>
+          <div class="correo">
+            <small>
+              Carolina Ferreiro Belenguer<br />
+              carolferreirobelenguer@gmail.com
+            </small>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
