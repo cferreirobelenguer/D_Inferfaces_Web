@@ -1,0 +1,519 @@
+
+/*Estilos de encabezado de página*/
+.contenedor {
+  background-image: url("../imagenes/fondo2.jpg");
+  background-size: center;
+  opacity: 0.9;
+}
+header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+.encabezado {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+/*Estilos del menú de navegación*/
+.encabezado:hover {
+  background-color: white;
+}
+
+a:link {
+  color: rgb(19, 18, 18);
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+a:visited {
+  color: rgb(19, 18, 18);
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+a:hover {
+  color: rgb(19, 18, 18);
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+a:active {
+  color: rgb(19, 18, 18);
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Estilos del submenú*/
+.nav {
+  width: 500px; /*Le establecemos un ancho*/
+  margin: 0 auto; /*Centramos automaticamente*/
+}
+
+.nav > li {
+  float: left;
+}
+
+ul {
+  list-style: none;
+}
+.nav li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: #ffffff;
+}
+dl {
+  background-color: #ffffff;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+/* Estilos del cuerpo*/
+
+/*Estilos de flexbox de leyes*/
+.leyes {
+  background-color: #f4f3ee;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+#ley1 {
+  background-color: #d2d4c8;
+  padding: 100px;
+}
+#ley2 {
+  background-color: #cebebe;
+  padding: 100px;
+}
+#ley3 {
+  background-color: #ece2d0;
+  padding: 100px;
+}
+#ley4 {
+  background-color: #dcc9b6;
+  padding: 100px;
+}
+#ley5 {
+  background-color: #a26769;
+  padding: 100px;
+}
+#ley6 {
+  background-color: #6d2e46;
+  padding: 100px;
+}
+#ley7 {
+  background-color: #472d30;
+  padding: 100px;
+}
+.bloque8 {
+  background-color: #f4f3ee;
+  padding: 100px;
+}
+/*Estilos de botones ver más*/
+#boton1 {
+  background-color: #fff1e6;
+  transition: transform 0.2s;
+  border: 3px solid #fff1e6;
+  padding: 10px;
+}
+#boton1:hover {
+  background-color: #d5b9b2;
+  border: 3px solid #d5b9b2;
+}
+#boton2 {
+  background-color: #fff1e6;
+  border: 3px solid #fff1e6;
+  padding: 10px;
+}
+#boton2:hover {
+  background-color: #d5b9b2;
+  border: 3px solid #d5b9b2;
+}
+#boton3 {
+  background-color: #fff1e6;
+  border: 3px solid #fff1e6;
+  padding: 10px;
+}
+#boton3:hover {
+  background-color: #d5b9b2;
+  border: 3px solid #d5b9b2;
+}
+#boton4 {
+  background-color: #fff1e6;
+  border: 3px solid #fff1e6;
+  padding: 10px;
+}
+#boton4:hover {
+  background-color: #d5b9b2;
+  border: 3px solid #d5b9b2;
+}
+#boton5 {
+  background-color: #fff1e6;
+  border: 3px solid #fff1e6;
+  padding: 10px;
+}
+#boton5:hover {
+  background-color: #d5b9b2;
+  border: 3px solid #d5b9b2;
+}
+#boton6 {
+  background-color: #fff1e6;
+  border: 3px solid #fff1e6;
+  padding: 10px;
+}
+#boton6:hover {
+  background-color: #d5b9b2;
+  border: 3px solid #d5b9b2;
+}
+#boton7 {
+  background-color: #fff1e6;
+  border: 3px solid #fff1e6;
+  padding: 10px;
+}
+#boton7:hover {
+  background-color: #d5b9b2;
+  border: 3px solid #d5b9b2;
+}
+.boton1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.boton2 {
+  margin-top: 50px;
+  text-align: center;
+}
+.boton3 {
+  margin-top: 50px;
+  text-align: center;
+}
+.boton4 {
+  margin-top: 50px;
+  text-align: center;
+}
+.boton5 {
+  margin-top: 50px;
+  text-align: center;
+}
+.boton6 {
+  margin-top: 50px;
+  text-align: center;
+}
+.boton7 {
+  margin-top: 50px;
+  text-align: center;
+}
+.boton1:hover {
+  transition: transform 2s;
+  transform: scale(1.2);
+}
+.boton2:hover {
+  transition: transform 2s;
+  transform: scale(1.2);
+}
+.boton3:hover {
+  transition: transform 2s;
+  transform: scale(1.2);
+}
+.boton4:hover {
+  transition: transform 2s;
+  transform: scale(1.2);
+}
+.boton5:hover {
+  transition: transform 2s;
+  transform: scale(1.2);
+}
+.boton6:hover {
+  transition: transform 2s;
+  transform: scale(1.2);
+}
+.boton7:hover {
+  transition: transform 2s;
+  transform: scale(1.2);
+}
+
+/*Estilos del título de portada*/
+
+.titulo h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  padding: 250px;
+  margin: 50px;
+  font-weight: bold;
+}
+/*Adaptación responsive del título de portada a pantallas de 600px y 300px*/
+@media only screen and (max-width: 600px) {
+  .titulo h1 {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-size: 60px;
+    padding: 50px;
+    margin: 50px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .titulo h1 {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding: 0px;
+    margin: 50px;
+    font-weight: bold;
+  }
+}
+/*Estilo del segundo título*/
+.intro {
+  text-align: center;
+  margin: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 50px;
+}
+.intro1 {
+  padding: 10px;
+  background-color: white;
+}
+.intro2 {
+  padding: 10px;
+  background-color: white;
+}
+#gestalt {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.gestalt1 {
+  text-align: center;
+  padding: 50px;
+}
+.gestalt2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #a26769;
+  color: white;
+  padding: 30px;
+}
+#cierre_ {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.cierre1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #bb8588;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+}
+.cierre2 {
+  text-align: center;
+  padding: 20px;
+}
+#continuidad_ {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.continuidad1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #a78a7f;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+}
+.continuidad2 {
+  text-align: center;
+  padding: 20px;
+}
+#figuraFondo_ {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.figuraFondo1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #a37774;
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+.figuraFondo2 {
+  text-align: center;
+}
+#movimiento_ {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.movimiento1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #d3ab9e;
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+.movimiento2 {
+  text-align: center;
+  padding: 20px;
+}
+#pregnancia_ {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.pregnancia1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #c6c5b9;
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+.pregnancia2 {
+  text-align: center;
+  padding: 20px;
+}
+#proximidad_ {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.proximidad1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #774c60;
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+.proximidad2 {
+  text-align: center;
+  padding: 20px;
+}
+#semejanza_ {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px;
+  align-content: space-between;
+}
+.semejanza1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #785964;
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+.semejanza2 {
+  text-align: center;
+  padding: 20px;
+}
+/*Estilos de pie de página */
+
+.piePagina {
+  color: black;
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+.piePagina2 {
+  color: black;
+  background-color: #f4f3ee;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
