@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de Gestalt</title>
+     <!--HOJA DE ESTILO CSS-->
+     <link href="estilo/estilo.css" rel="stylesheet" type="text/css">
+     <!--bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <!--Fuente Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat+Alternates:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!--Fuente Rubik para el navegador-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+    <header>
+    <!--Encabezado de la web-->
+    <div class="container-fluid">
+    <div class="encabezado">
+        <!--Menú de navegación con submenú-->
+        <nav>
+        <ul class="nav">
+            <li><a href="" id="encabezado" ></a></li>
+            <li><a href="leyes.html" id="encabezado" >&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+            <li><a href="" id="encabezado">&nbsp;&nbsp;LEYES DE GESTALT&nbsp;&nbsp;</a>
+                <ul>
+                    <dl><a href="#ley1">LEY DE CIERRE</a></dl>
+                    <dl><a href="#ley2">LEY DE CONTINUIDAD</a></dl>
+                    <dl><a href="#ley3">LEY DE FIGURA FONDO</a></dl>
+                    <dl><a href="#ley4">LEY DE MOVIMIENTO</a></dl>
+                    <dl><a href="#ley5">LEY DE PREGNANCIA</a></dl>
+                    <dl><a href="#ley6">LEY DE PROXIMIDAD</a></dl>
+                    <dl><a href="#ley7">LEY DE SEMEJANZA</a></dl>
+                </ul>
+            </li>
+        </ul>
+        
+    </nav>
+    
+    </div>
+    
+</header>
+<main>
+    <!--Cuerpo de la web-->
+    <div class="titulo">
+        <h1>LAS LEYES DE GESTALT</h1>
+    </div>
+    
+</div>
+    <div class="intro">
+        <div class="intro1">
+        <img src="imagenes/diseño.jpg" width="300px" height="300px" class="img-fluid"
+            alt="Responsive image"/>
+        </div>  
+        <div class="intro2">
+        <img src="imagenes/intro.png" width="600px" height="600px" class="img-fluid"
+            alt="Responsive image"/>
+        </div>      
+    </div>
+    <div class="leyes">
+        <div id="ley1">
+            <img src="imagenes/leyCierre.jpeg" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            <div class="imagen1">
+            <img src="imagenes/cierre.png" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            </div>
+            <div class="boton1">
+            <a href="#cierre_"><button id="boton1">VER MÁS</button></a>
+            </div>
+        </div>
+        <div id="ley2">
+            <img src="imagenes/leyContinuidad.jpeg" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            <div class="imagen2">
+                <img src="imagenes/continuidad.png" width="350px" height="350px" class="img-fluid"
+                alt="Responsive image"/>
+            </div>
+            <div class="boton2">
+                <a href="#continuidad_"><button id="boton2">VER MÁS</button></a>
+            </div>
+            
+        </div>
+        <div id="ley3">
+            <img src="imagenes/LeyFiguraFondo.jpeg" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            <div class="imagen3">
+            <img src="imagenes/figuraFondo.png" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            </div>
+            <div class="boton3">
+                <a href="#figuraFondo_"><button id="boton3">VER MÁS</button></a>
+            </div>
+        </div>
+        <div id="ley4">
+            <img src="imagenes/leyMovimiento.jpeg" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            <div class="imagen4">
+            <img src="imagenes/movimiento.png" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            </div>
+            <div class="boton4">
+                <a href="#movimiento_"><button id="boton4">VER MÁS</button></a>
+            </div>
+        </div>
+        <div id="ley5">
+            <img src="imagenes/leyPregnancia.jpeg" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            <div class="imagen5">
+            <img src="imagenes/pregnant.png" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            </div>
+            <div class="boton5">
+                <a href="#pregnancia_"><button id="boton5">VER MÁS</button></a>
+            </div>
+        </div>
+        <div id="ley6">
+            <img src="imagenes/leyProximidad.jpg" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            <div class="imagen6">
+            <img src="imagenes/proximidad.png" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            </div>
+            <div class="boton6">
+                <a href="#proximidad_"><button id="boton6">VER MÁS</button></a>
+            </div>
+            
+        </div>
+        <div id="ley7">
+            <img src="imagenes/LeySemejanza.png" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            <div class="imagen7">
+            <img src="imagenes/semejanza.png" width="350px" height="350px" class="img-fluid"
+            alt="Responsive image"/>
+            </div>
+            <div class="boton7">
+                <a href="#semejanza_"><button id="boton7">VER MÁS</button></a>
+            </div>
+        </div>
+        <div class="bloque8">
+            <a href="#gestalt" ><img src="imagenes/masInfo.png" width="350px" height="500px" class="img-fluid"
+            alt="Responsive image"/></a>
+            
+        </div>
+    </div>
+    <div id="gestalt">
+        <div class="gestalt1">
+            <img src="imagenes/gestalt.png" width="5000" height="5000" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+        <div class="gestalt2">
+            <p>Los diseñadores saben de la gran importancia que tienen aspectos de diseño como el uso de márgenes, la distancia entre los diferentes elementos de la página, el contraste entre las figuras y el fondo, la aplicación de diferentes patrones gráficos de diseño para diferenciar elementos, etc. Me atrevería a decir que aplican estos recursos sobre todo basándose en su experiencia, de una manera instintiva, y con el objetivo de conseguir un diseño claro. En el fondo, lo que están aplicando de una manera más o menos consciente son algunas de las Leyes Gestalt. </p>
+        </div>
+    </div>
+    <div id="cierre_">
+        <div class="cierre1">
+            <h3>LEY DE CIERRE</h3>
+            <p>Es evidente que contorneando unos elementos con una línea se percibirán agrupados, tal como esta ley indica. De todas formas, me gustaría aprovechar para aconsejar que en caso de que deseemos utilizar la ley del cierre, no lo hagamos utilizando líneas, porque como resultado obtendremos un diseño muy estático y sobrecargado. En su lugar podemos utilizar figuras de fondo coloreado, de modo que el contorno de la figura realizará la misma función que las líneas, tal como se ilustra en la siguiente figura: </p> 
+        </div>
+        <div class="cierre2">
+            <img src="imagenes/cierre_desarrollo.gif" width="4000" height="4000" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+    </div>
+    <div id="continuidad_">
+        <div class="continuidad1">
+            <h3>LEY DE CONTINUIDAD</h3>
+            
+            <p>Esta ley nos dice que los elementos que se sitúan siguiendo algún tipo de alineación, se perciben como un conjunto. Como ejemplo, en las siguientes figuras podemos observar cómo el ritmo de lectura o visualización de los elementos puede cambiar según cómo se alineen los elementos:</p> 
+        </div>
+        <div class="continuidad2">
+            <img src="imagenes/continuidad_desarrollo.gif" width="2300" height="2300" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+    </div>
+    <div id="figuraFondo_">
+        <div class="figuraFondo1">
+            <h3>LEY DE LA FIGURA Y FONDO</h3>
+            <br>
+            <p>Si no respetamos un contraste mínimo entre figura y fondo, ésta no se percibirá con la suficiente claridad. Esta ley parece bastante evidente, pero aún así no resulta complicado encontrar páginas web en las que el texto no tiene la suficiente legibilidad por culpa de un contraste insuficiente entre ésta y el fondo, tal como sucede en el siguiente ejemplo:</p> 
+        </div>
+        <div class="figuraFondo2">
+            <img src="imagenes/figura_desarrollo.jpg" width="3000" height="2100" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+    </div>
+    <div id="movimiento_">
+        <div class="movimiento1">
+            <h3>LEY DEL MOVIMIENTO</h3>
+            <br>
+            <p>Esta ley, teoriza que los objetos y elementos que parece que construyen un patrón o flujo en la misma dirección, son una vez mas percibidos como parte de un grupo.</p>
+        </div>
+        <div class="movimiento2">
+            <img src="imagenes/movimiento_desarrollo.png" width="1200" height="800" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+    </div>
+    <div id="pregnancia_">
+        <div class="pregnancia1">
+            <h3>LEY DE LA PREGNANCIA</h3>
+            <br>
+            <p>La ley de la pregnancia o enmascaramiento nos ayuda a entender los procesos psicológicos de la percepción y procesamiento de la información, pero no son aplicables directamente en el diseño visual de interfaces desde el punto de vista gráfico.</p>
+        </div>
+        <div class="pregnancia2">
+            <img src="imagenes/pregnancia_desarrollo.gif" width="1800" height="800" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+    </div>
+    <div id="proximidad_">
+        <div class="proximidad1">
+            <h3>LEY DE LA PROXIMIDAD</h3>
+            <br>
+            <p>La ley de proximidad nos dice que los elementos próximos tendemos a percibirlos como una unidad. Por lo tanto, al componer una página, debemos agrupar los elementos que tienen relación entre ellos, y separarlos del resto como indica la siguiente figura:</p>
+        </div>
+        <div class="proximidad2">
+            <img src="imagenes/proximidad_desarrollo.gif" width="1900" height="900" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+    </div>
+    <div id="semejanza_">
+        <div class="semejanza1">
+            <h3>LEY DE LA SEMEJANZA</h3>
+            <br>
+            <p>Esta ley, como la anterior, nos permitirá relacionar los elementos que deben percibirse como una unidad, utilizando las diferencias de atributos gráficos. En la siguiente figura podemos observar como sin utilizar la ley de proximidad podemos igualmente relacionar elementos aplicando los mimos atributos a aquellos que deseamos agrupar.</p>
+        </div>
+        <div class="semejanza2">
+            <img src="imagenes/semejanza_desarrollo.gif" width="2500" height="1000" class="img-fluid"
+            alt="Responsive image"/>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <!--Pie de página de la web-->
+    <div class="piePagina">
+        <div class="pie1">
+            <img src="imagenes/correo.png" width="50px" height="50px" class="img-fluid"
+            alt="Responsive image"/>
+            <p>
+                <adress>carolferreirobelenguer@gmail.com</adress>
+            </p>
+        </div>
+    </div> 
+    <div class="piePagina2">
+        <div class="pie2">
+            <small>©2001-2021 Todos los derechos reservados.</small>
+        </div>
+    </div>   
+    
+</footer>
+
+    </div>
+</body>
+</html>
