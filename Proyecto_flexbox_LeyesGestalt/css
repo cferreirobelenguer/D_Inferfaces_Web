@@ -290,9 +290,14 @@ ul {
 }
 
 /*Estilos del título de portada*/
-
+@font-face {
+  font-family: "Lato-Regular";
+  src:url('../fuente/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: regular;
+}
 .titulo h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato-Regular";
   text-align: center;
   font-size: 60px;
   padding: 250px;
