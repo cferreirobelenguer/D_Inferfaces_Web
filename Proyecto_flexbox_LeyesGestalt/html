@@ -1,5 +1,3 @@
-<!--Proyecto de web trabajando con flexbox-->
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -546,14 +544,18 @@
           <!--Pie de página de la web-->
           <div class="piePagina">
             <div class="pie1">
-              <img
+              
+              <adress> 
+                Carolina Ferreiro Belenguer <br>
+                carolferreirobelenguer@gmail.com </adress>
+                <br>
+                <img
                 src="imagenes/correo.png"
                 width="50"
                 height="50"
                 class="img-fluid"
                 alt="Responsive image"
               />
-              <adress> carolferreirobelenguer@gmail.com </adress>
             </div>
           </div>
 
