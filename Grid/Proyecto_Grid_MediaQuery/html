@@ -1,0 +1,204 @@
+
+
+
+<!--Proyecto de web con grid y media querys-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO GRIDS Y MEDIAQUERYS</title>
+    <style>
+        header{
+            
+            text-align: center;
+            margin:30px;
+            padding:10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        main{
+            background-color:#ffc8dd;
+            text-align: center;
+            margin:30px;
+            padding:20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 40px;
+        }
+        .articulo1{
+            background-color:#bde0fe;
+            text-align: center;
+            margin:40px;
+            padding:70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            float:left;
+            clear: left;
+        }
+        .articulo2{
+            background-color:#a2d2ff;
+            text-align: center;
+            margin:40px;
+            padding:70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            float:right;
+            clear: right;
+        }
+        
+
+        .aside_{
+            background-color:#cdb4db;
+            text-align: center;
+            margin:20px;
+            padding:20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        footer{
+            text-align: center;
+            margin:30px;
+            padding:10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        /*GRID*/
+        #pagina {
+            display: grid;
+            width: 100%;
+            height: 100px;
+            grid-template-areas:"header header"
+                                "aside main"
+                                "footer footer";
+            grid-template-rows: 150px 1fr 100px;
+            grid-template-columns: 200px 1fr;
+            gap:10px;
+            padding:10px;
+            place-content:stretch;
+        }
+        header{
+            grid-area:header;
+            background-color:#cdb4db;
+        }
+        main{
+            grid-area:main;
+            background-color:#ffc8dd;
+        }
+        footer {
+            grid-area:footer;
+            background-color:#cdb4db;
+            margin-bottom: 30px;
+            padding-bottom: 70px;
+        }
+        aside{
+            grid-area: aside;
+            background-color:#cdb4db;
+            margin-left: 30px;
+        }
+        
+        /*DISEÑO RESPONSIVE*/
+        /*Media Query de Ipad*/
+        @media only screen and (max-width: 700px) {
+            .articulo2{
+            background-color:#a2d2ff;
+            text-align: center;
+            display:block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            }
+            .articulo1{
+            background-color:#bde0fe;
+            text-align: center;
+            display:block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            }
+            
+        }
+        /*DISEÑO RESPONSIVE*/
+        /*Media Query de Móvil*/
+        @media only screen and (max-width: 415px) {
+            .articulo2{
+            background-color:#a2d2ff;
+            text-align: center;
+            display:block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            }
+            .articulo1{
+            background-color:#bde0fe;
+            text-align: center;
+            display:block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            }
+            #pagina {
+            display: grid;
+            width: 100%;
+            height: 100px;
+            grid-template-areas:"header header"
+                                "main main"
+                                "aside aside"
+                                "footer footer";
+            grid-template-rows: 150px 1fr 100px;
+            grid-template-columns: 200px 1fr;
+            gap:10px;
+            padding:10px;
+            place-content:stretch;
+            }
+            footer {
+            grid-area:footer;
+            background-color:#cdb4db;
+            
+            }
+            aside{
+            grid-area: aside;
+            background-color:#cdb4db;
+            margin-bottom: 100px;
+            
+            }
+            main{
+            background-color:#ffc8dd;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <section id="pagina">
+        <header>
+            <div class="header_">
+                <h1>Header</h1>
+            </div>
+        </header>
+        <main>
+            <div class="cabecera">
+                <h1>Cabecera main</h1>
+            
+            <div class="articulo1">
+                Articulo 1
+            </div>
+            <div class="articulo2">
+                Articulo 2
+            </div>
+            </div>
+        </main>
+        <aside>
+            <div class="aside_">
+                <h1>ASIDE</h1>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer_">
+                <h1>Footer</h1>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
