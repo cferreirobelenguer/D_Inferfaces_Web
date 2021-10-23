@@ -1,0 +1,261 @@
+
+/*DISEÑO MOVILE FIRST*/
+/*Declaración de variables*/
+$centro:center;
+$anchoCompleto:100%;
+$altoCompleto:100%;
+$colorHeaderFooterAside:#CDB4DB;
+$colorMain:#FFC8DD;
+$colorArticulo1:#BDE0FE;
+$colorArticulo2:#A2D2FF;
+$tamañoFilas:150px 1fr 100px;
+$tamañoColumnas:200px 1fr;
+$fuenteMain:Arial,Helvetica,sans-serif;
+$fuenteResto:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Snas Unicode', Geneva, Verdana, sans-serif;
+$tamañoFuente20:20px;
+$tamañoFuente30:30px;
+$tamañoFuente40:40px;
+$tamañoFuente10:10px;
+#pagina{
+    display:grid;
+    width:$anchoCompleto;
+    height:$altoCompleto;
+    grid-template-areas:"header header"
+                        "aside main"
+                        "footer footer";
+    grid-template-rows: $tamañoFilas;
+    grid-template-columns: $tamañoColumnas;
+    gap:10px;
+    padding:10px;
+    place-content:stretch;
+        
+
+}
+
+/*GRID*/
+#pagina{
+    display:grid;
+    width:$anchoCompleto;
+    height:$altoCompleto;
+    grid-template-areas:"header header"
+                        "aside main"
+                        "footer footer";
+    grid-template-rows: $tamañoFilas;
+    grid-template-columns: $tamañoColumnas;
+    gap:10px;
+    padding:10px;
+    place-content:stretch;
+        
+
+}
+    header{
+    text-align:$centro;
+    margin:30px;
+    padding:10px;
+    font-family:$fuenteMain;
+    font-size:$tamañoFuente10;
+    grid-area:header;
+    background-color:$colorHeaderFooterAside;
+    }
+    .articulo2{
+    background-color:$colorArticulo2;
+    text-align: center;
+    display:block;
+    font-family: $fuenteResto;
+    font-size: $tamañoFuente20;
+    
+    }
+    .articulo1{
+    background-color:$colorArticulo1;
+    text-align: $centro;
+    display:block;
+    font-family: $fuenteResto;
+    font-size: $tamañoFuente20;
+    
+    }
+    #pagina {
+    display: grid;
+    width: $anchoCompleto;
+    height: $altoCompleto;
+    grid-template-areas:"header header"
+                        "main main"
+                        "aside aside"
+                        "footer footer";
+    grid-template-rows: $tamañoFilas;
+    grid-template-columns:$tamañoColumnas;
+    gap:10px;
+    padding:10px;
+    place-content:stretch;
+    }
+    footer {
+    grid-area:footer;
+    background-color:$colorHeaderFooterAside;
+    text-align: $centro;
+    
+    }
+    aside{
+    grid-area: aside;
+    background-color:$colorHeaderFooterAside;
+    padding-bottom: 80px;
+    text-align: $centro;
+    font-family:$fuenteResto;
+    font-size:20px;
+    
+    }
+    main{
+    background-color:$colorMain;
+    text-align: $centro;
+    font-family: $fuenteMain;
+    font-size: $tamañoFuente10;
+    }
+
+    /*DISEÑO RESPONSIVE*/
+        /*Media Query de Ipad*/
+        @media only screen and (min-width: 700px) {
+            #pagina {
+                display: grid;
+                width: $anchoCompleto;
+                height: $altoCompleto;
+                grid-template-areas:"header header"
+                                    "aside main"
+                                    "footer footer";
+                grid-template-rows: $tamañoFilas;
+                grid-template-columns:$tamañoColumnas;
+                gap:10px;
+                padding:10px;
+                place-content:stretch;
+                }
+            .articulo2{
+            background-color:$colorArticulo2;
+            text-align: $centro;
+            display:block;
+            font-family:$fuenteResto;
+            font-size:$tamañoFuente30;
+            }
+            .articulo1{
+            background-color:$colorArticulo1;
+            text-align: $centro;
+            display:block;
+            font-family: $fuenteResto;
+            font-size: $tamañoFuente30;
+            }
+            header{
+                text-align:$centro;
+                margin:30px;
+                padding:10px;
+                font-family:$fuenteMain;
+                font-size:$tamañoFuente20;
+                grid-area:header;
+                background-color:$colorHeaderFooterAside;
+            }
+            footer{
+                text-align:$centro;
+                margin:30px;
+                padding:10px;
+                font-family:$fuenteResto;
+                font-size:$tamañoFuente20;
+                grid-area:footer;
+                background-color:$colorHeaderFooterAside;
+                margin-bottom:30px;
+                padding-bottom:70px;
+            }
+            main{
+                text-align:$centro;
+                margin:30px;
+                padding:20px;
+                font-family:$fuenteResto;
+                font-size:$tamañoFuente30;
+                grid-area:main;
+                background-color: $colorMain;
+            }
+            aside{
+                grid-area:aside;
+                background-color:$colorHeaderFooterAside;
+                margin-left:30px;
+                text-align:$centro;
+                margin:20px;
+                padding:20px;
+                font-family:$fuenteResto;
+                font-size:20px;
+                padding-bottom:70px;
+            }
+
+            
+        }
+        @media only screen and (min-width: 1000px) {
+            #pagina {
+                display: grid;
+                width: $anchoCompleto;
+                height: $altoCompleto;
+                grid-template-areas:"header header"
+                                    "aside main"
+                                    "footer footer";
+                grid-template-rows: $tamañoFilas;
+                grid-template-columns:$tamañoColumnas;
+                gap:10px;
+                padding:10px;
+                place-content:stretch;
+                }
+            header{
+                text-align:$centro;
+                margin:30px;
+                padding:10px;
+                font-family:$fuenteMain;
+                font-size:$tamañoFuente20;
+                grid-area:header;
+                background-color:$colorHeaderFooterAside;
+            }
+            main{
+                text-align:$centro;
+                margin:30px;
+                padding:20px;
+                font-family:$fuenteResto;
+                font-size:$tamañoFuente30;
+                grid-area:main;
+                background-color: $colorMain;
+                .articulo1{
+                    background-color:$colorArticulo1;
+                    text-align:$centro;
+                    margin:40px;
+                    padding:70px;
+                    font-family:$fuenteResto;
+                    font-size:$tamañoFuente20;
+                    float:left;
+                    clear:left;
+                }
+                .articulo2{
+                    background-color: $colorArticulo2;
+                    text-align:$centro;
+                    margin:40px;
+                    padding:70px;
+                    font-family:$fuenteResto;
+                    font-size:$tamañoFuente20;
+                    float:right;
+                    clear:right;
+                }
+            }
+            footer{
+                text-align:$centro;
+                margin:30px;
+                padding:10px;
+                font-family:$fuenteResto;
+                font-size:$tamañoFuente20;
+                grid-area:footer;
+                background-color:$colorHeaderFooterAside;
+                margin-bottom:30px;
+                padding-bottom:70px;
+            }
+            aside{
+                grid-area:aside;
+                background-color:$colorHeaderFooterAside;
+                margin-left:30px;
+                text-align:$centro;
+                margin:20px;
+                padding:20px;
+                font-family:$fuenteResto;
+                font-size:20px;
+                padding-bottom:70px;
+            }
+            
+        }
+    
