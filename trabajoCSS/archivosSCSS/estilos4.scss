@@ -40,10 +40,11 @@ $pixeles20:20px;
     padding: $pixeles30;
     font-family: $fuente;
     font-size: 3vw;
+    color: $colorFuente;
   }
   
   .lista1:visited {
-    color: #C70039;
+    color: #4e1a29!important;
     background-color: #FF4200;
     text-align: center;
   }
@@ -86,15 +87,15 @@ $pixeles20:20px;
     text-align: center;
   }
   //SELECTORES DE ATRIBUTOS
-  a[href*="https"] {
-    li{
+  .periodico[href*="https"][href*="https"] {
+      color:black;
       background-color: rgb(214, 250, 11);
-  }
+  
 }
-  a[target="_blank"] {
-    li{
+  .periodico[target="_blank"] {
+      color:black;
       background-color: rgb(255, 153, 0);
-  }
+  
 }
 
 #pseudo-clases{
@@ -111,7 +112,7 @@ p:lang(fr){
 h6:lang(es){
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  color: #E3026F;
+  color: #270d25;
   font-size: 3rem;
 }
 //PSEUDO - ELEMENTOS
