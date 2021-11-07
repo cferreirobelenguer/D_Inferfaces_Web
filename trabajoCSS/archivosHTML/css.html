@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3</title>
+    <!--bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <!--HOJA DE ESTILO CSS-->
+    <link href="CSS/estilos2.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logoCSS.png"/>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="encabezado">
+                <img src="imagenes/css.png" width="200" height="200" alt="logo" class="img-fluid" />
+                <nav>
+                    <ul class="nav">
+                        <li>
+                            <a href="trabajoCSS3.html"
+                                id="home">HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        </li>
+                        <li>
+                            <a href="CSS3.html"
+                                id="css3">CSS3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            <ul>
+                                <li>
+                                    <a href="CSS3.html#rounded">ROUNDED
+                                        CORNERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a href="CSS3.html#border">BORDER
+                                        IMAGES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="CSS3.html#backgrounds">BACKGROUNDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="CSS3.html#gradients">GRADIENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="CSS3.html#shadows">SHADOWS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a href="CSS3.html#text">TEXT
+                                        EFFECTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a href="CSS3.html#animaciones">2D
+                                        TRANSFORMS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a href="CSS3.html#animaciones1">3D
+                                        TRANSFORMS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="CSS3.html#transiciones">TRANSITIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="CSS3.html#animacionescss3">ANIMATIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="css.html">USO DE CSS&nbsp;&nbsp;</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+<main>
+    <div class="titulo">
+        <h1>SELECTORES</h1>
+    </div>
+    <div class="lista">
+        <ul>
+            <li><a href="#etiqueta" class="lista1">De etiqueta</a></li>
+            <li><a href="#clases" class="lista1"><li>De clases</a></li>
+            <li><a href="#identificador" class="lista1"><li>De identificador</a></li>
+            <li><a href="#atributos" class="lista1"><li>De atributos</a></li>
+            <li><a href="#pseudo-clases" class="lista1"><li>Pseudo-clases</a></li>
+            <li><a href="#pseudo-elementos" class="lista1"><li>Pseudo-elementos</a></li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <div id="etiqueta">
+        <s>Esto está mal</s>
+    </div>
+    <hr>
+    <div id="clases">
+        <p>loren ipsum <div class="lorem">"lorem"</div></p>
+    </div>
+    <hr>
+    <div id="identificador">
+        <div id="iris">
+            <br>
+        </div>
+    </div>
+    <hr>
+    <div id="atributos">
+        <ul>
+            <a href="https://elpais.com"><li>PERIÓDICO EL PAÍS</li></a>
+            <a href="http://larazon.es"><li>PERIÓDICO LA RAZÓN</li></a>
+            <a href="construccion.html" target="_blank"><li>PERIÓDICO EN CONSTRUCCIÓN</li></a>
+        </ul>
+    </div>
+    <hr>
+    <div id="pseudo-clases">
+        <div lang="fr">
+            <p>La salute è riccheza va un detto comune</p>
+        </div>
+        <div lang="es">
+            <h6>El que no corre, vuela</h6>
+        </div>
+        <div lang="fr">
+            <p>Autre temps,autres moeurs</p>
+        </div>
+        <div class="diasSemana">
+            <ol>
+                <li>LUNES</li>
+                <li>MARTES</li>
+                <li>MIÉRCOLES</li>
+                <li>JUEVES</li>
+                <li>VIERNES</li>
+                <li>SABADO</li>
+                <li>DOMINGO</li>
+            </ol>
+        </div>
+    </div>
+    <hr>
+    <div id="pseudo-elementos">
+        <div class="parrafo">
+        <p class="parrafo1_"> 
+            Érase una vez un caballero que salió por el mundo a buscar la ida y las aventuras. Yendo por un camino se encontró con cuatro animales: un león, un galdo, un ánguila y una hormiga.
+        </p>
+        </div>
+        <div class="parrafo2">
+            <p class="parrafo2_">Y colorín colorado este cuento se ha acabado.</p>
+        </div>
+    </div>
+    <hr>
+</main>
+<footer>
+    <div class="pie">
+        <div id="correo">
+            <p>CAROLINA FERREIRO BELENGUER</p>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/correoIcono.png" alt="correo" width="100" height="100" class="img-fluid">
+        </div>
+        <br>
+        <br>
+        <div class="copy">
+            <p>&copy; Copyright Carolina Ferreiro - Todos los derechos reservados</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
