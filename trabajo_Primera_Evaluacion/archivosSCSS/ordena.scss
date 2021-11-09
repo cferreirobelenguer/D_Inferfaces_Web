@@ -270,7 +270,8 @@ $medida20:20px;
             color: black;
             font-size: $medida20;
             font-family: "Zen Kaku Gothic New";
-            padding-left: $medida20+10;
+            padding-left: 30px;
+            margin:auto;
         }
 
         @else {
@@ -278,6 +279,7 @@ $medida20:20px;
             font-size: $medida20;
             font-family: "Zen Kaku Gothic New";
             padding-left: $medida20;
+            
         }
     }
 
@@ -296,7 +298,8 @@ $medida20:20px;
             color: black;
             font-size: $medida20;
             font-family: "Zen Kaku Gothic New";
-            padding-left: $medida20;
+            padding-left: 150px;
+            margin:auto;
         }
     }
 
