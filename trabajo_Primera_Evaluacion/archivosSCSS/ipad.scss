@@ -259,12 +259,15 @@ $medida20:20px;
 
     .descripcion {
         width: $ancho;
-
+        padding-left: 30px;
+        margin:auto;
+        padding: 50px;
+        
         @if width==$ancho {
             color: black;
             font-size: $medida20;
             font-family: "Zen Kaku Gothic New";
-            padding-left: $medida20+10;
+            
         }
 
         @else {
@@ -277,12 +280,14 @@ $medida20:20px;
 
     .foto {
         width: $ancho;
-
+        padding-left: 50px;
+        margin:auto;
+        padding: 20px;
+        text-align: center;
         @if width==$ancho {
             color: black;
             font-size: $medida20;
             font-family: "Zen Kaku Gothic New";
-            padding-left: $medida20+10;
             text-align: center;
         }
 
