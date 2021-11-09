@@ -1,314 +1,390 @@
-
 /*Estilo de fuente local */
 @font-face {
     font-family: "Zen Kaku Gothic New";
-    src:url('../fuentes/ZenKakuGothicNew-Light.ttf') format('truetype');
+    src: url('../fuentes/ZenKakuGothicNew-Light.ttf') format('truetype');
     font-weight: normal;
-    font-size: regular;
-  }
+
+}
+
 $fuente:"Zen Kaku Gothic New";
 $ancho:100%;
 $medida20:20px;
 
 @media only screen and (max-width: 850px) {
-	header {
-		position: sticky;
-		width: $ancho;
-		background-color: hsla(90, 100%, 100%, 1);
-	}
-	.cabecera {
-		background-color: black;
-	}
-	.redesCabecera {
-		text-align: left;
-		padding-top: $medida20;
-		padding-left: 100px;
-		width: $ancho;
-	}
-	.logo {
-		text-align: center;
-	}
-	.navegacion {
-		text-align: center;
-		padding: $medida20 -10;
-	}
-	a {
-		&:link {
-			color: rgb(0, 0, 0);
-			font-family:$fuente;
-			text-decoration: none;
-			font-size: 2vw;
-			font-weight: bold;
-		}
-		&:visited {
-			color: rgb(0, 0, 0);
-			font-family:$fuente;
-			text-decoration: none;
-			font-size: 2vw;
-			font-weight: bold;
-		}
-		&:hover {
-			color: rgb(0, 0, 0);
-			font-family: $fuente;
-			text-decoration: none;
-			font-size: 2vw;
-			font-weight: bold;
-		}
-		&:active {
-			color: rgb(0, 0, 0);
-			font-family: $fuente;
-			text-decoration: none;
-			font-size: 2vw;
-			font-weight: bold;
-		}
-	}
-	.nav {
-		width: 500px;
-		margin: 0 auto;
-		>li {
-			float: left;
-		}
-		li {
-			a {
-				color: rgb(0, 0, 0);
-				text-decoration: none;
-				padding: 10px 12px;
-				display: block;
-				&:hover {
-					background-color: #ffffff;
-				}
-			}
-			ul {
-				display: none;
-				position: absolute;
-				min-width: 140px;
-				li {
-					position: relative;
-					ul {
-						right: -140px;
-						top: 0px;
-					}
-				}
-			}
-			&:hover {
-				>ul {
-					display: block;
-					background-color: #ffffff;
-				}
-			}
-		}
-	}
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	#behance {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	#facebook {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	#instagram {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	#linkedin {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	#behance1 {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	#facebook1 {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	#instagram1 {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	#linkedin1 {
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
-	.portada {
-		margin: auto;
-		background-color: white;
-		width: 800px;
-		padding-top: $medida20;
-		display: none;
-	}
-	.portada2 {
-		padding-left: $medida20+80;
-		width: $ancho;
-		display: block;
-	}
-	li {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	ul.slider {
-		position: relative;
-		width: $medida20+780;
-		height: $medida20+480;
-		li {
-			position: absolute;
-			left: 0px;
-			top: 0px;
-			opacity: 0;
-			width: inherit;
-			height: inherit;
-			transition: opacity 0.5s;
-			background: #fff;
-			img {
-				width: $ancho;
-				height: $medida20+480;
-				object-fit: cover;
-			}
-			&:first-child {
-				opacity: 1;
-			}
-			&:target {
-				opacity: 1;
-			}
-		}
-	}
-	.menu {
-		text-align: center;
-		margin: $medida20;
-		li {
-			display: inline-block;
-			text-align: center;
-			a {
-				display: inline-block;
-				color: rgb(0, 0, 0);
-				text-decoration: none;
-				background-color: black;
-				padding: $medida20 -10;
-				width: $medida20;
-				height: $medida20;
-				font-size: $medida20;
-				border-radius: $ancho;
-			}
-		}
-	}
-	.botonRedes {
-		padding-top: $medida20+80;
-		text-align: center;
-		padding: $medida20;
-		padding-bottom: $medida20+50;
-	}
-	.contenedorFlex {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: stretch;
-	}
-	.descripcion {
-		width: $ancho;
-		font-size: $medida20;
-		font-family: "Zen Kaku Gothic New";
-		padding-left: $medida20+10;
-	}
-	.foto {
-		text-align: center;
-		width: $ancho;
-		padding-left: $medida20+10;
-	}
-	.descripcion2 {
-		padding-top: $medida20+20;
-		padding-left: $medida20+80;
-		padding-right: $medida20+80;
-		margin: auto;
-		padding-bottom: $medida20+10;
-	}
-	.foto2 {
-		text-align: center;
-	}
-	.descripcion3 {
-		padding-top: $medida20+20;
-		padding-left: $medida20+80;
-		padding-right: $medida20+80;
-		margin: auto;
-		padding-top: $medida20+30;
-		padding-bottom: $medida20+10;
-	}
-	.foto3 {
-		text-align: center;
-	}
-	.contenedorpie {
-		display: flex;
-		flex-flow: column wrap;
-		align-items: stretch;
-	}
-	.redesPie {
-		text-align: right;
-		padding-top: $medida20;
-		padding-right: $medida20+80;
-		width: $ancho;
-		padding-bottom: $medida20;
-	}
-	.correo {
-		font-family: $fuente;
-		font-size: $medida20 -2;
-		text-align: center;
-		padding-bottom: $medida20+30;
-		padding-top: $medida20 -10;
-		font-weight: bold;
-	}
-	.piePagina {
-		background-color: black;
-		color: white;
-		font-family: $fuente;
-		font-size: 1em;
-		text-align: center;
-		padding: 20px;
-	}
-	.letrero {
-		font-family: $fuente;
-		color: black;
-		margin: auto;
-		padding: $medida20;
-		font-weight: bold;
-		text-align: center;
-		&:hover {
-			font-family: $fuente;
-			color: rgb(255, 0, 149);
-			font-weight: bold;
-		}
-	}
-	.contenedorFlex1 {
-		margin: auto;
-		padding: $medida20+10;
-		padding-left: $medida20+10;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-	.contenedorFlex2 {
-		padding-left:$medida20+10;
-		margin: auto;
-		padding: $medida20+10;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-items: center;
-		text-align: center;
-	}
+    header {
+        position: sticky;
+        width: $ancho;
+        background-color: hsla(90, 100%, 100%, 1);
+    }
+
+    .cabecera {
+        background-color: black;
+    }
+
+    .redesCabecera {
+        text-align: left;
+        padding-top: $medida20;
+        padding-left: 100px;
+        width: $ancho;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .navegacion {
+        text-align: center;
+        padding: 10px;
+    }
+
+    a {
+        &:link {
+            color: rgb(0, 0, 0);
+            font-family: $fuente;
+            text-decoration: none;
+            font-size: 2vw;
+            font-weight: bold;
+        }
+
+        &:visited {
+            color: rgb(0, 0, 0);
+            font-family: $fuente;
+            text-decoration: none;
+            font-size: 2vw;
+            font-weight: bold;
+        }
+
+        &:hover {
+            color: rgb(0, 0, 0);
+            font-family: $fuente;
+            text-decoration: none;
+            font-size: 2vw;
+            font-weight: bold;
+        }
+
+        &:active {
+            color: rgb(0, 0, 0);
+            font-family: $fuente;
+            text-decoration: none;
+            font-size: 2vw;
+            font-weight: bold;
+        }
+    }
+
+    .nav {
+        width: 500px;
+        margin: 0 auto;
+
+        >li {
+            float: left;
+        }
+
+        li {
+            a {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                padding: 10px 12px;
+                display: block;
+
+                &:hover {
+                    background-color: #ffffff;
+                }
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                min-width: 140px;
+
+                li {
+                    position: relative;
+
+                    ul {
+                        right: -140px;
+                        top: 0px;
+                    }
+                }
+            }
+
+            &:hover {
+                >ul {
+                    display: block;
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #behance {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #facebook {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #instagram {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #linkedin {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #behance1 {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #facebook1 {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #instagram1 {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    #linkedin1 {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .portada {
+        margin: auto;
+        background-color: white;
+        width: 800px;
+        padding-top: $medida20;
+        display: none;
+    }
+
+    .portada2 {
+        padding-left: $medida20+80;
+        width: $ancho;
+        display: block;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    ul.slider {
+        position: relative;
+        width: $medida20+780;
+        height: $medida20+480;
+
+        li {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            transition: opacity 0.5s;
+            background: #fff;
+
+            img {
+                width: $ancho;
+                height: $medida20+480;
+                object-fit: cover;
+            }
+
+            &:first-child {
+                opacity: 1;
+            }
+
+            &:target {
+                opacity: 1;
+            }
+        }
+    }
+
+    .menu {
+        text-align: center;
+        margin: $medida20;
+
+        li {
+            display: inline-block;
+            text-align: center;
+
+            a {
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                background-color: black;
+                padding: 10px;
+                width: $medida20;
+                height: $medida20;
+                font-size: $medida20;
+                border-radius: $ancho;
+            }
+        }
+    }
+
+    .botonRedes {
+        padding-top: $medida20+80;
+        text-align: center;
+        padding: $medida20;
+        padding-bottom: $medida20+50;
+    }
+
+    .contenedorFlex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+
+    .descripcion {
+        width: $ancho;
+
+        @if width==$ancho {
+            color: black;
+            font-size: $medida20;
+            font-family: "Zen Kaku Gothic New";
+            padding-left: $medida20+10;
+        }
+
+        @else {
+            color: black;
+            font-size: $medida20;
+            font-family: "Zen Kaku Gothic New";
+            padding-left: $medida20;
+        }
+    }
+
+    .foto {
+        width: $ancho;
+
+        @if width==$ancho {
+            color: black;
+            font-size: $medida20;
+            font-family: "Zen Kaku Gothic New";
+            padding-left: $medida20+10;
+            text-align: center;
+        }
+
+        @else {
+            color: black;
+            font-size: $medida20;
+            font-family: "Zen Kaku Gothic New";
+            padding-left: $medida20;
+        }
+    }
+
+    .descripcion2 {
+        padding-top: $medida20+20;
+        padding-left: $medida20+80;
+        padding-right: $medida20+80;
+        margin: auto;
+        padding-bottom: $medida20+10;
+    }
+
+    .foto2 {
+        text-align: center;
+    }
+
+    .descripcion3 {
+        padding-top: $medida20+20;
+        padding-left: $medida20+80;
+        padding-right: $medida20+80;
+        margin: auto;
+        padding-top: $medida20+30;
+        padding-bottom: $medida20+10;
+    }
+
+    .foto3 {
+        text-align: center;
+    }
+
+    .contenedorpie {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: stretch;
+    }
+
+    .redesPie {
+        text-align: right;
+        padding-top: $medida20;
+        padding-right: $medida20+80;
+        width: $ancho;
+        padding-bottom: $medida20;
+    }
+
+    .correo {
+        font-family: $fuente;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: $medida20+30;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
+    .piePagina {
+        background-color: black;
+        color: white;
+        font-family: $fuente;
+        font-size: 1em;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .letrero {
+        font-family: $fuente;
+        color: black;
+        margin: auto;
+        padding: $medida20;
+        font-weight: bold;
+        text-align: center;
+
+        &:hover {
+            font-family: $fuente;
+            color: rgb(255, 0, 149);
+            font-weight: bold;
+        }
+    }
+
+    .contenedorFlex1 {
+        margin: auto;
+        padding: $medida20+10;
+        padding-left: $medida20+10;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedorFlex2 {
+        padding-left: $medida20+10;
+        margin: auto;
+        padding: $medida20+10;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-items: center;
+        text-align: center;
+    }
 }
