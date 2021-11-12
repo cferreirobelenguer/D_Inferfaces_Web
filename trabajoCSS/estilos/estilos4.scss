@@ -1,0 +1,128 @@
+$fuente: Arial,
+Helvetica,
+sans-serif;
+$colorFuente: #131418;
+$pixeles30:30px;
+$pixeles20:20px;
+
+.titulo {
+  font-family: $fuente;
+  color: #fda0a0;
+  text-align: center;
+  padding: $pixeles20;
+}
+
+.lista a:visited {
+  color: #4e1a29;
+  font-size: 150%;
+  background-color: #FF4200;
+  text-align: center;
+}
+
+#etiqueta {
+  text-align: center;
+  font-family: $fuente;
+  padding: $pixeles20;
+}
+
+//SELECTORES DE ELEMENTO
+s {
+  color: #FF0000;
+  font-size: 0.75rem;
+
+}
+
+#clases {
+  text-align: center;
+  font-family: $fuente;
+  padding: $pixeles20;
+}
+
+//SELECTORES DE CLASES
+.lorem {
+  border: 2px solid green;
+  padding: 10px;
+  border-radius: 25px;
+  text-shadow: 2px 2px 4px #222022;
+}
+
+//SELECTORES DE ID
+#iris {
+  background-image: linear-gradient(to right, red, #f26e02, yellow, #53f202, #02f297, #0207f2, #8202f2);
+  padding: $pixeles30;
+  text-align: center;
+}
+
+//SELECTORES DE ATRIBUTOS
+.periodico[href*="https"] {
+
+  background-color: rgb(214, 250, 11);
+
+}
+
+.periodico[target="_blank"] {
+
+  background-color: rgb(255, 153, 0);
+
+}
+
+#pseudo-clases {
+  text-align: center;
+  margin: auto;
+  padding: $pixeles20;
+}
+
+//ESTILOS DE DISTINTAS LENGUAS
+p:lang(fr) {
+  font-family: 'Times New Roman', Times, serif;
+  color: #8202f2;
+  font-size: 1rem;
+}
+
+h6:lang(es) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: #270d25;
+  font-size: 3rem;
+}
+
+//PSEUDO - ELEMENTOS
+ol li:first-child {
+  color: #53f202;
+  font-size: 5rem;
+}
+
+ol li:last-child {
+  color: #0207f2;
+  font-size: 3rem;
+}
+
+ol li:nth-child(4n) {
+  color: #E3026F;
+  font-size: 2rem;
+}
+
+.parrafo1_::first-letter {
+  font-size: 130%;
+  color: #8202f2;
+
+}
+
+.parrafo2_::first-letter {
+  font-size: 130%;
+  color: #8202f2;
+
+}
+
+.parrafo1_::first-line {
+  font-style: italic;
+  color: #53f202;
+}
+
+.parrafo1_::after {
+  content: ".";
+}
+
+.parrafo2_::after {
+  content: ".";
+}
