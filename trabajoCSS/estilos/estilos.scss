@@ -1,0 +1,131 @@
+/* Estilos de navegación*/
+$center:center;
+$colorFuente:#131418;
+$pixeles20:20px;
+$fuente:"Lato-Regular";
+$rosa:#eeb6b4;
+
+/*Estilos la fuente*/
+@font-face {
+  font-family: $fuente;
+  src: url('../fuente/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  
+}
+
+.encabezado {
+  margin: $pixeles20;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  text-align: $center;
+  color: #EEB6B4;
+  padding: $pixeles20;
+  cursor: pointer;
+  font-family: $fuente;
+  font-size: 1.5vw;
+}
+
+nav a:link {
+  text-decoration: none;
+  background-color: #ffffff;
+  text-align: $center;
+  color: $colorFuente;
+  padding: $pixeles20;
+  font-family: $fuente;
+  font-size: 1.5vw;
+}
+
+nav a:visited {
+  text-decoration: none;
+  background-color: #ffffff;
+  text-align: $center;
+  color: $colorFuente;
+  padding: $pixeles20;
+  font-family: $fuente;
+  font-size: 1.5vw;
+}
+
+nav a:active {
+  text-decoration: none;
+  background-color: #A9B0CB;
+  $colorFuente: #131418;
+  color: $colorFuente;
+  padding: $pixeles20;
+  font-family: $fuente;
+  font-size: 1.5vw;
+}
+
+body {
+  width: 100%;
+
+  .portada {
+    text-align: $center;
+  }
+}
+
+/*Estilos del submenú*/
+.nav {
+  width: 500px;
+  /*Le establecemos un ancho*/
+  margin: 0 auto;
+  /*Centramos automaticamente*/
+}
+
+.nav>li {
+  float: left;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav li a {
+  color: $colorFuente;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: #ffffff;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover>ul {
+  display: block;
+  background-color: #ffffff;
+  color: #EEB6B4;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+/* Main */
+.portada {
+  margin: 10px;
+}
+
+/*Estilos de pie de página*/
+.pie {
+  background-color: $rosa;
+  margin: 10px;
+  font-family: $fuente;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+}
