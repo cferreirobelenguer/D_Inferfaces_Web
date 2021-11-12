@@ -1,0 +1,110 @@
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fda0a0;
+  text-align: center;
+  padding: 20px;
+}
+
+.lista a:visited {
+  color: #4e1a29;
+  font-size: 150%;
+  background-color: #FF4200;
+  text-align: center;
+}
+
+#etiqueta {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+s {
+  color: #FF0000;
+  font-size: 0.75rem;
+}
+
+#clases {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.lorem {
+  border: 2px solid green;
+  padding: 10px;
+  border-radius: 25px;
+  text-shadow: 2px 2px 4px #222022;
+}
+
+#iris {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(#f26e02), color-stop(yellow), color-stop(#53f202), color-stop(#02f297), color-stop(#0207f2), to(#8202f2));
+  background-image: linear-gradient(to right, red, #f26e02, yellow, #53f202, #02f297, #0207f2, #8202f2);
+  padding: 30px;
+  text-align: center;
+}
+
+.periodico[href*="https"] {
+  background-color: #d6fa0b;
+}
+
+.periodico[target="_blank"] {
+  background-color: #ff9900;
+}
+
+#pseudo-clases {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
+p:lang(fr) {
+  font-family: 'Times New Roman', Times, serif;
+  color: #8202f2;
+  font-size: 1rem;
+}
+
+h6:lang(es) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: #270d25;
+  font-size: 3rem;
+}
+
+ol li:first-child {
+  color: #53f202;
+  font-size: 5rem;
+}
+
+ol li:last-child {
+  color: #0207f2;
+  font-size: 3rem;
+}
+
+ol li:nth-child(4n) {
+  color: #E3026F;
+  font-size: 2rem;
+}
+
+.parrafo1_::first-letter {
+  font-size: 130%;
+  color: #8202f2;
+}
+
+.parrafo2_::first-letter {
+  font-size: 130%;
+  color: #8202f2;
+}
+
+.parrafo1_::first-line {
+  font-style: italic;
+  color: #53f202;
+}
+
+.parrafo1_::after {
+  content: ".";
+}
+
+.parrafo2_::after {
+  content: ".";
+}
+/*# sourceMappingURL=estilos4.css.map */
