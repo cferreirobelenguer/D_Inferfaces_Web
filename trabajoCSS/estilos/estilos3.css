@@ -1,0 +1,276 @@
+/*Estilos la fuente*/
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fuente/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/*Estilos de rounded corners*/
+#corners1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 100px;
+  border-radius: 25px;
+  background-color: #eeb6b4;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  margin: auto;
+}
+
+.letrero {
+  padding: 30px;
+  margin: auto;
+  font-family: "Lato-Regular";
+  font-size: 25px;
+  text-align: center;
+}
+
+.letrero:hover {
+  padding: 30px;
+  margin: auto;
+  font-family: "Lato-Regular";
+  font-size: 30px;
+  text-align: center;
+  color: #9f72f3;
+  font-weight: bold;
+}
+
+/*Estilos de border image*/
+#borderImages1 {
+  text-align: center;
+}
+
+#border {
+  border: 10px solid #ffb3b3;
+}
+
+/*Estilos de backgrounds*/
+#backgrounds {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  text-align: center;
+  padding: 35px;
+  margin: auto;
+  width: 200px;
+  height: 150px;
+  background-color: #92a1f2;
+  background-size: auto;
+}
+
+#backgrounds2 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 35px;
+  margin: auto;
+  width: 200px;
+  height: 150px;
+  background-color: #92a1f2;
+  opacity: 0.3;
+  margin-bottom: 30px;
+}
+
+#backgrounds6 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 35px;
+  margin: auto;
+  width: 200px;
+  height: 150px;
+  background: #ffffff url("../imagenes/pattern.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+  margin-bottom: 30px;
+}
+
+/*Estilos de gradientes*/
+#gradients {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 35px;
+  margin: auto;
+  width: 200px;
+  height: 150px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fda0a0), to(#ee9cff));
+  background-image: linear-gradient(#fda0a0, #ee9cff);
+  margin-bottom: 30px;
+}
+
+/*Estilos de sombras*/
+#shadows {
+  font-family: "Lato-Regular";
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lato-Regular";
+  font-size: 30px;
+  margin: auto;
+  color: #fda0a0;
+  text-shadow: 10px 10px 10px #cc23ee;
+}
+
+h6.text_ {
+  font-size: 30px;
+  font-family: "Lato-Regular";
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+  margin: auto;
+}
+
+#texto2 {
+  text-align: center;
+  margin: auto;
+  padding-left: 150px;
+  margin-left: 150px;
+  margin: auto;
+}
+
+h6.text2_ {
+  width: 150px;
+  border: 1px solid #000000;
+  word-wrap: break-word;
+  font-size: 30px;
+  font-family: "Lato-Regular";
+  text-align: center;
+  margin: auto;
+}
+
+#texto3 {
+  text-align: center;
+  margin: auto;
+  margin-left: 150px;
+  padding-left: 150px;
+}
+
+h6.text3_ {
+  font-size: 30px;
+  font-family: "Lato-Regular";
+  text-align: center;
+  width: 140px;
+  border: 1px solid #000000;
+  word-break: break-all;
+  margin: auto;
+}
+
+h6.text4_ {
+  font-size: 30px;
+  font-family: "Lato-Regular";
+  text-align: center;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin: auto;
+  padding: 50px;
+}
+
+#animaciones {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background: #ffc7fa;
+  -webkit-animation: crescendo 1.5s alternate infinite ease-in;
+  animation: crescendo 1.5s alternate infinite ease-in;
+  text-align: center;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+@-webkit-keyframes crescendo {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+#animaciones1 {
+  width: 300px;
+  height: 100px;
+  background-color: #f594f0;
+  border: 1px solid #e271dd;
+  -webkit-transform: rotateX(150deg);
+          transform: rotateX(150deg);
+  padding: 150px;
+  margin: auto;
+}
+
+#transiciones {
+  width: 100px;
+  height: 100px;
+  background: #ff8fdd;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+  margin: auto;
+}
+
+#transiciones:hover {
+  width: 1000px;
+}
+
+#animacionescss3 {
+  width: 100px;
+  height: 100px;
+  background-color: #e69dd9;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  padding-left: 150px;
+  margin: auto;
+}
+
+@-webkit-keyframes example {
+  from {
+    background-color: #ca32be;
+  }
+  to {
+    background-color: #601170;
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: #ca32be;
+  }
+  to {
+    background-color: #601170;
+  }
+}
+/*# sourceMappingURL=estilos3.css.map */
