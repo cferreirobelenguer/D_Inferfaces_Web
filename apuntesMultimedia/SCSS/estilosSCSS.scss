@@ -9,6 +9,7 @@ $fuenteSpartan:"Spartan-Medium";
 $fuenteQuatro:'Quattrocento Sans', sans-serif;
 $tamano:10px;
 $responsive:1vw;
+$tamanoWidth:50%;
 
 /*Función para tamaño*/
 @function aumentarTamano($n){
@@ -16,6 +17,9 @@ $responsive:1vw;
 }
 @function aumentarResponsive($n){
     @return $responsive+$n;
+}
+@function aumentarWidth($n){
+	@return $tamanoWidth+$n;
 }
 /*mixin*/
 /*Estilos flexbox*/
@@ -62,7 +66,7 @@ $responsive:1vw;
 	text-align: center;
 	padding: aumentarTamano(20);
 	transform: scale(1.2);
-	width: 100%;
+	width: aumentarWidth(50);
 }
 
 body {
@@ -98,7 +102,7 @@ a {
 }
 /* Imagen portada png responsive*/
 .contenido {
-	max-width: 100%;
+	max-width: aumentarWidth(50);
 	height: auto;
 	text-align: center;
 	padding-bottom: $tamano;
@@ -119,10 +123,10 @@ a {
 }
 /*Estilos de animaciones*/
 .animacion_ {
-	width: 70%;
+	width: aumentarWidth(20);
 	height: 800px;
 	background-image: url(../multimedia/imagen.jpg);
-	background-size: 150%;
+	background-size: aumentarWidth(100);
 	animation: movimiento 10s infinite linear alternate;
 }
 @keyframes movimiento {
