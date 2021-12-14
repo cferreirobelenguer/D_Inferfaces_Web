@@ -1,0 +1,362 @@
+@charset "UTF-8";
+/*Estilo de fuente local*/
+@font-face {
+  font-family: "Spartan-Medium";
+  src: url("../fuente/Spartan-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/*Declaración de variables*/
+/*Función para tamaño*/
+/*mixin*/
+/*Estilos flexbox*/
+/*Estilos de títulos*/
+body {
+  font-family: "Spartan-Medium";
+  font-weight: normal;
+}
+
+/*fondo de color de web*/
+.container-fluid {
+  background-color: #c4b3dd;
+}
+
+/*Menú navegación*/
+.navegacion {
+  color: #f1ede8;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  background-color: #1d2021;
+}
+
+a:link {
+  color: #f1ede8;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+a:visited {
+  color: #f1ede8;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+a:hover {
+  color: #c4b3dd !important;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+a:active {
+  color: #f1ede8;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+/* Imagen portada png responsive*/
+.contenido {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contenido_web {
+  background-color: #f1ede8;
+}
+
+/*Estilos de animaciones con flexbox*/
+#animacion {
+  margin: auto;
+  padding: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.titulo {
+  padding-top: 10px;
+  font-family: "Spartan-Medium";
+  font-size: 1vw;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.titulo:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Spartan-Medium";
+  color: #f1ede8;
+  background-color: #c4b3dd;
+  font-size: 1vw;
+  text-align: center;
+  padding: 30px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 100%;
+}
+
+/*Estilos de animaciones*/
+.animacion_ {
+  width: 70%;
+  height: 800px;
+  background-image: url(../multimedia/imagen.jpg);
+  background-size: 150%;
+  -webkit-animation: movimiento 10s infinite linear alternate;
+          animation: movimiento 10s infinite linear alternate;
+}
+
+@-webkit-keyframes movimiento {
+  from {
+    background-position: top left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+@keyframes movimiento {
+  from {
+    background-position: top left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+/*Estilos de imagenes*/
+#imagenes {
+  margin: auto;
+  padding: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.titulo1 {
+  padding-top: 10px;
+  font-family: "Spartan-Medium";
+  font-size: 1vw;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.titulo1:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Spartan-Medium";
+  color: #f1ede8;
+  background-color: #c4b3dd;
+  font-size: 1vw;
+  text-align: center;
+  padding: 30px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 100%;
+}
+
+.imagen {
+  padding-top: 10px;
+  font-family: "Spartan-Medium";
+  font-size: 1.8vw;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+p:hover {
+  font-family: "Spartan-Medium";
+  color: #c4b3dd;
+}
+
+/*Estilos de canva con flexbox*/
+#canva {
+  margin: auto;
+  padding: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.titulo2 {
+  padding-top: 10px;
+  font-family: "Spartan-Medium";
+  font-size: 1vw;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.titulo2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Spartan-Medium";
+  color: #f1ede8;
+  background-color: #c4b3dd;
+  font-size: 1vw;
+  text-align: center;
+  padding: 30px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 100%;
+}
+
+/*Estilos del audio con flexbox*/
+#audio {
+  margin: auto;
+  padding: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.titulo3 {
+  padding-top: 10px;
+  font-family: "Spartan-Medium";
+  font-size: 1vw;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.titulo3:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Spartan-Medium";
+  color: #f1ede8;
+  background-color: #c4b3dd;
+  font-size: 1vw;
+  text-align: center;
+  padding: 30px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 100%;
+}
+
+.audio_ {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.licencia_audio {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+/*Estilos de video con flexbox*/
+#video {
+  margin: auto;
+  padding: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.titulo4 {
+  padding-top: 10px;
+  font-family: "Spartan-Medium";
+  font-size: 1vw;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.titulo4:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Spartan-Medium";
+  color: #f1ede8;
+  background-color: #c4b3dd;
+  font-size: 1vw;
+  text-align: center;
+  padding: 30px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 100%;
+}
+
+.video_ {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+/*Estilos de pie de página*/
+.pie2 {
+  text-align: center;
+  background-color: #c4b3dd;
+  margin: auto;
+  padding: 10px;
+  color: #f1ede8;
+  font-family: "Spartan-Medium";
+  font-size: 1.5vw;
+}
+/*# sourceMappingURL=estilosSCSS.css.map */

@@ -1,0 +1,223 @@
+/*Estilo de fuente local*/
+@font-face {
+	font-family: "Spartan-Medium";
+	src: url("../fuente/Spartan-Medium.ttf") format("truetype");
+	font-weight: normal;
+}
+/*Declaración de variables*/
+$fuenteSpartan:"Spartan-Medium";
+$fuenteQuatro:'Quattrocento Sans', sans-serif;
+$tamano:10px;
+$responsive:1vw;
+
+/*Función para tamaño*/
+@function aumentarTamano($n){
+    @return $tamano+$n;
+}
+@function aumentarResponsive($n){
+    @return $responsive+$n;
+}
+/*mixin*/
+/*Estilos flexbox*/
+@mixin flex{
+    margin: auto;
+	padding: aumentarTamano(10);
+	padding-left: aumentarTamano(10);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+/*Estilos de títulos*/
+@mixin titulos{
+    padding-top: $tamano;
+	font-family: "Spartan-Medium";
+	font-size: $responsive;
+	text-align: center;
+	margin: auto;
+	padding: $tamano;
+}
+@mixin enlaces{
+    color: #f1ede8;
+	font-family: $fuenteQuatro;
+	text-decoration: none;
+	font-size: aumentarResponsive(0.2);
+	text-align: center;
+}
+@mixin enlaceHover{
+    color: #c4b3dd!important;
+	font-family: $fuenteQuatro;
+	text-decoration: none;
+	font-size: aumentarResponsive(0.2);
+	text-align: center;
+}
+@mixin cambiarColor{
+    padding-top: $tamano;
+	padding-bottom: $tamano;
+	font-family: $fuenteSpartan;
+	color: #f1ede8;
+	background-color: #c4b3dd;
+	font-size: $responsive;
+	text-align: center;
+	padding: aumentarTamano(20);
+	transform: scale(1.2);
+	width: 100%;
+}
+
+body {
+	font-family: $fuenteSpartan;
+	font-weight: normal;
+}
+
+/*fondo de color de web*/
+.container-fluid {
+	background-color: #c4b3dd;
+}
+/*Menú navegación*/
+.navegacion {
+	color: #f1ede8;
+	text-decoration: none;
+	text-align: center;
+	padding: aumentarTamano(10);
+	background-color: #1d2021;
+}
+a {
+	&:link {
+		@include enlaces;
+	}
+	&:visited {
+		@include enlaces;
+	}
+	&:hover {
+		@include enlaceHover;
+	}
+	&:active {
+		@include enlaces;
+	}
+}
+/* Imagen portada png responsive*/
+.contenido {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	padding-bottom: $tamano;
+}
+.contenido_web {
+	background-color: #f1ede8;
+}
+
+/*Estilos de animaciones con flexbox*/
+#animacion {
+	@include flex;
+}
+.titulo {
+	@include titulos;
+	&:hover {
+		@include cambiarColor;
+	}
+}
+/*Estilos de animaciones*/
+.animacion_ {
+	width: 70%;
+	height: 800px;
+	background-image: url(../multimedia/imagen.jpg);
+	background-size: 150%;
+	animation: movimiento 10s infinite linear alternate;
+}
+@keyframes movimiento {
+    from {
+        background-position: top left;
+    }
+
+    to {
+        background-position: top right;
+    }
+}
+/*Estilos de imagenes*/
+#imagenes {
+	margin: auto;
+	padding: aumentarTamano(10);
+	padding-left: aumentarTamano(10);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.titulo1 {
+	@include titulos;
+	&:hover {
+		@include cambiarColor;
+	}
+}
+.imagen {
+	padding-top: $tamano;
+	font-family: $fuenteSpartan;
+	font-size: aumentarResponsive(0.8);
+	text-align: center;
+	margin: auto;
+	padding: $tamano;
+}
+p {
+	&:hover {
+		font-family: $fuenteSpartan;
+		color: #c4b3dd;
+	}
+}
+/*Estilos de canva con flexbox*/
+#canva {
+	@include flex;
+}
+.titulo2 {
+	@include titulos;
+	&:hover {
+		@include cambiarColor;
+	}
+}
+/*Estilos del audio con flexbox*/
+#audio {
+	@include flex;
+}
+.titulo3 {
+	@include titulos;
+	&:hover {
+		@include cambiarColor;
+	}
+}
+.audio_ {
+	text-align: center;
+	margin: auto;
+	padding: $tamano;
+}
+.licencia_audio {
+	text-align: center;
+	margin: auto;
+	padding: $tamano;
+}
+/*Estilos de video con flexbox*/
+#video {
+	@include flex;
+}
+.titulo4 {
+	@include titulos;
+	&:hover {
+		@include cambiarColor;
+	}
+}
+.video_ {
+	text-align: center;
+	margin: auto;
+	padding: $tamano;
+}
+/*Estilos de pie de página*/
+.pie2 {
+	text-align: center;
+	background-color: #c4b3dd;
+	margin: auto;
+	padding: $tamano;
+	color: #f1ede8;
+	font-family: $fuenteSpartan;
+	font-size: aumentarResponsive(0.5);
+}
