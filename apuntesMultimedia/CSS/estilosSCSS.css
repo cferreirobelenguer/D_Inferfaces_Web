@@ -6,7 +6,11 @@
   font-weight: normal;
 }
 
-
+/*Declaración de variables*/
+/*Función para tamaño*/
+/*mixin*/
+/*Estilos flexbox*/
+/*Estilos de títulos*/
 body {
   font-family: "Spartan-Medium";
   font-weight: normal;
@@ -195,7 +199,7 @@ a:active {
 
 p:hover {
   font-family: "Spartan-Medium";
-  color: #c4b3dd;
+  color: #c5bcd2;
 }
 
 /*Estilos de canva con flexbox*/
@@ -348,7 +352,7 @@ p:hover {
 /*Estilos de pie de página*/
 .pie2 {
   text-align: center;
-  background-color: #c4b3dd;
+  background-color: #c5bcd2;
   margin: auto;
   padding: 10px;
   color: #f1ede8;
