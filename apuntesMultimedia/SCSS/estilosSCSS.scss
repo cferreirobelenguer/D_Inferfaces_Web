@@ -108,7 +108,7 @@ a {
 	padding-bottom: $tamano;
 }
 .contenido_web {
-	background-color: #f1ede8;
+	background-color: rgb(241, 237, 232); 
 }
 
 /*Estilos de animaciones con flexbox*/
@@ -123,7 +123,7 @@ a {
 }
 /*Estilos de animaciones*/
 .animacion_ {
-	width: aumentarWidth(20);
+	width: percentage(0.7);
 	height: 800px;
 	background-image: url(../multimedia/imagen.jpg);
 	background-size: aumentarWidth(100);
@@ -167,7 +167,7 @@ a {
 p {
 	&:hover {
 		font-family: $fuenteSpartan;
-		color: #c4b3dd;
+		color:hsl(264, 19%, 78%)
 	}
 }
 /*Estilos de canva con flexbox*/
@@ -218,10 +218,10 @@ p {
 /*Estilos de pie de página*/
 .pie2 {
 	text-align: center;
-	background-color: #c4b3dd;
+	background-color: hsl(264, 19%, 78%);
 	margin: auto;
 	padding: $tamano;
-	color: #f1ede8;
+	color: rgb(241, 237, 232); 
 	font-family: $fuenteSpartan;
 	font-size: aumentarResponsive(0.5);
 }
