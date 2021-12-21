@@ -1,0 +1,36 @@
+<!--
+7º Crear una página web con elementos div algunos serán de la clase “selected” y otros no.
+Todos ellos tendrán párrafos dentro. Crear un script para que aquellos párrafos cuyo padre 
+sea de la clase selected aparezcan con el fondo en color amarillo.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <div class="selected">
+        <p>Hola</p>
+    </div>
+    <div>
+        <p>Hola</p>
+    </div>
+    <div class="selected">
+        <p>Hola</p>
+    </div>
+    <div>
+        <p>Hola</p>
+    </div>
+    <!--JQUERY-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Se muestra solamente los div de la clase selected en amarillo
+            $(".selected").css({'background-color':'yellow'});
+        })
+    </script>
+</body>
+</html>
