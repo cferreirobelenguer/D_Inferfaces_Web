@@ -1,0 +1,35 @@
+
+<!--2º Cree un botón con su nombre. 
+    Al situar el cursor en el mismo se modificará la opacidad a 0,3 en 0,4 segundos.
+    Y al salir se dejará como estaba en 0,4 segundos.-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 2 </title>
+</head>
+
+<body>
+    <h1 style="background-color: blueviolet;color:aliceblue">CAROLINA</h1>
+    <button id="boton">BOTÓN</button>
+    <!--JQUERY-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#boton").hover(function () {
+                //Se pone la opacidad a los 0.4 segundos al pasar el ratón por el botón
+                    setTimeout(function(){
+                        $("h1").css({'opacity':'0.3'});
+                    },400)},
+                    //En caso de que no se pase el ratón vuelve a su estado original
+                function () {
+                    $("h1").css({'background-color': 'blueviolet','color':'aliceblue','opacity':'1'});
+                });
+        });
+    </script>
+</body>
+
+</html>
