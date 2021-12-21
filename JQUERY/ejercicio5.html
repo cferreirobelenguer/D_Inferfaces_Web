@@ -1,0 +1,68 @@
+<!-- 5º Crea un formulario con 3 chexbox: Mayor de edad, Socio, Tarjeta Regalo.
+
+Además tendrá una tabla con las siguientes filas:
+1.	Debe ir acompañado de un adulto
+2.	No puede traer invitados
+3.	Abonará 5% de tasas
+
+En caso de pulsar el primer checkbox se esconderá la primera fila. 
+En el caso de pulsar el segundo se esconderá la segunda fila y si se pulsa la tercera se esconderá la tercera fila. 
+En caso contrario se mostrarán las mismas filas.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <form>
+        <label><input type="checkbox" id="mayor" value="mayoredad">Mayor de edad</label>
+        <label><input type="checkbox" id="socio" value="socio">Socio</label>
+        <label><input type="checkbox" id="tarjeta" value="tarjetaregalo">Tarjeta regalo</label>
+    </form>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <td id="fila1">Debe ir acompañado de un adulto</td>
+        </tr>
+        <tr>
+            <td id="fila2">No puede traer invitados</td>
+        </tr>
+        <tr>
+            <td id="fila3">Abonará 5% de las tasas</td>
+        </tr>
+    </table>
+    <!--JQUERY-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                //Si se hace click se oculta la fila
+                $("#mayor").click(function () {
+                    $("#fila1").fadeOut();
+                });
+                //Y se muestra la fila si se vuelve a hacer click
+                $("#mayor").click(function () {
+                    $("#fila1").fadeIn();
+                });
+                $("#socio").click(function () {
+                    $("#fila2").fadeOut();
+                });
+                $("#socio").click(function () {
+                    $("#fila2").fadeIn();
+                });
+                $("#tarjeta").click(function () {
+                    $("#fila3").fadeOut();
+                });
+                $("#tarjeta").click(function () {
+                    $("#fila3").fadeIn();
+                });
+            });
+    </script>
+</body>
+</html>
