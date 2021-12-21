@@ -1,0 +1,47 @@
+
+
+<!--1º Cree un enlace que lleve su nombre y una cabecera con “Ejercicio1” similar a:
+Utilice jquery para que al pulsar en el enlace se oculte el enlace con una duración 
+de 5 segundos. Inmediatamente después se muestra tardando 3 segundos y finalmente 
+se vuelve a mostrar en 0,2 segundos.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1 ENLACE</title>
+    
+</head>
+<body>
+    <header>
+        <a href="https://www.iestetuan.es/cmsj/">ENLACE</a>
+
+    </header>
+    <main>
+        <br>
+        <button id="ocultar">Ocultar</button>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <!--JQUERY-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        //El enlace se oculta y muestra al pulsar el botón
+        $(document).ready(function(){
+            $("#ocultar").click(function(){
+                $("a").hide(5000);
+                $("a").show(3000);
+                $("a").toggle(200);
+                $("a").toggle(2000);
+                alert("He tardado dos segundos en mostrarme");
+            });
+
+        });
+    </script>
+</body>
+</html>
