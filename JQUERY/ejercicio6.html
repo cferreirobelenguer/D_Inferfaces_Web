@@ -1,0 +1,69 @@
+<!--6º Crear un formulario que pida las notas de las asignaturas del curso. 
+Al situarse el foco en cada uno de los campos de nota se debe modificar el color del texto a rojo.
+Cuando no tenga el foco el color del texto debe ser verde.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="">Notas de DIW</label>
+            <input type="text" id="notas">
+        </p>
+        <p>
+            <label for="">Notas de DAW</label>
+            <input type="text" id="notas2">
+        </p>
+        <p>
+            <label for="">Notas de DES</label>
+            <input type="text" id="notas3">
+        </p>
+        <p>
+            <label for="">Notas de DEC</label>
+            <input type="text" id="notas4">
+        </p>
+        <!--JQUERY-->
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                //Si el foco se centra en esta caja el fondo se pone rojo
+                $("#notas").focus(function () {
+                    $(this).css("background-color", "red");
+                });
+                //En caso de que el foco no se centre en esta caja el fondo se pone verde
+                $("#notas").blur(function () {
+                    $(this).css("background-color", "green");
+                });
+                $("#notas2").focus(function () {
+                        $(this).css("background-color", "red");
+                });
+                $("#notas2").blur(function () {
+                    $(this).css("background-color", "green");
+                });
+                $("#notas3").focus(function () {
+                        $(this).css("background-color", "red");
+                });
+                $("#notas3").blur(function () {
+                    $(this).css("background-color", "green");
+                });
+                $("#notas4").focus(function () {
+                        $(this).css("background-color", "red");
+                });
+                $("#notas4").blur(function () {
+                    $(this).css("background-color", "green");
+                });
+            });
+        </script>
+
+    </form>
+</body>
+
+</html>
