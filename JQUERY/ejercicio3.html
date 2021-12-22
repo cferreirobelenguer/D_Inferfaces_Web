@@ -1,0 +1,41 @@
+
+<!--3º Cree un botón que al pulsarlo la primera vez lo mueva 400px a la izquierda y la siguiente vez lo deje completamente a la izquierda. Si se vuelve a pulsar lo movería a 400px,
+    si lo vuelve a pulsar a la izquierda,… y así sucesivamente. 
+    En el primer caso que sea slow y en  el segundo fast.-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 3</title>
+</head>
+
+<body>
+    <button id="boton" style='left:0px' ;>PULSAR</button>
+    <button id="boton2" style='left:0px' ;>PULSAR</button>
+    <!--JQUERY-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        let clickado = false;
+        $(document).ready(function () {
+
+            $("#boton").click(function () {
+                    $("#boton").animate({
+                        left: "400",
+                        width: '+=400'
+                    }, "slow")
+            });
+            $("#boton2").click(function () {
+                    $("#boton").animate({
+                        left: "100%",
+                        width: '100%'
+                    }, "fast");
+                });
+
+        });
+    </script>
+</body>
+
+</html>
