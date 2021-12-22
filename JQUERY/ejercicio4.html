@@ -1,0 +1,39 @@
+<!--Se oculta la primera fila de la tabla al pulsar el checkbox,
+cuando se quita el click en el checkbox se vuelve a su estado original-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 4 </title>
+</head>
+<body>
+    <form>
+        <label><input type="checkbox" class="campo">Check 1:</label>
+    </form>
+    <p>Example table 1:</p>
+    <table border=1>
+        <tr>
+            <td class="lista1">Manufacturer row One here</td>
+        </tr>
+        <tr>
+            <td class="lista2">Manufacturer row Two here</td>
+        </tr>
+    </table>
+    <!--JQUERY-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        //Se oculta la primera fila de la tabla al pulsar el checkbox
+        $(document).ready(function(){
+            $('.campo').click(function(){
+                if($(this).is(":checked")){
+                    $('.lista1').hide();
+                }else{
+                    $('.lista1').show();
+                }
+            })
+        });
+    </script>
+</body>
+</html>
