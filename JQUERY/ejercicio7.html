@@ -29,7 +29,7 @@ sea de la clase selected aparezcan con el fondo en color amarillo.
     <script>
         $(document).ready(function(){
             //Se muestra solamente los div de la clase selected en amarillo
-            $(".selected").css({'background-color':'yellow'});
+            $(".selected").children().css({'background-color':'yellow'});
         })
     </script>
 </body>
